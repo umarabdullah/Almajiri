@@ -1,0 +1,215 @@
+.custom-navbar {
+  background: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Centra', sans-serif;
+  z-index: 1000;
+}
+
+.custom-navbar .navbar-link {
+  margin: 0 15px;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-link:hover,
+.custom-navbar .navbar-link.active {
+  color: #007bff;
+}
+
+.login-btn {
+  background: #007bff;
+  border: none;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
+
+.scrolled {
+  background: #f8f9fa !important;
+  transition: background 0.3s ease;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/* Add this to your styles.css */
+.navbar-toggler {
+  margin-left: 10px;
+}
+/* Smooth slide for navbar collapse */
+.navbar-collapse {
+  transition: max-height 0.35s ease;
+  overflow: hidden;
+}
+
+.navbar-collapse.collapsing {
+  max-height: 0;
+}
+
+.navbar-collapse.show {
+  max-height: 500px; /* Adjust depending on content size */
+}
+
+/* Adjust spacing for mobile login button */
+.login-btn.d-lg-none {
+  margin-right: 10px;
+}
+
+
+/* Login.css */
+/* === Global Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-weight: 600;
+  color: #111827;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Remove input number arrows (for numeric inputs) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* === Custom Classes === */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+/* Smooth collapse animation for Navbar toggles */
+.navbar-collapse.collapse {
+  transition: height 0.35s ease;
+}
+
+.navbar-collapse.collapsing {
+  transition: height 0.35s ease;
+  overflow: hidden;
+}
+
+/* Override react-bootstrap Navbar link styles */
+.navbar-link {
+  color: #374151;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #2563eb;
+}
+
+/* Login button custom position for mobile */
+.mobile-login-btn {
+  margin-right: 12px;
+}
+
+/* Responsive Image Styles */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Section spacing helpers */
+.section {
+  padding: 60px 0;
+}
+
+.section-sm {
+  padding: 30px 0;
+}
+
+/* Shadow cards */
+.card-shadow {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Hide scrollbar for cleaner design */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
